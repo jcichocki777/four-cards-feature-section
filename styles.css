@@ -22,7 +22,7 @@
 
 html,
 body {
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
 
 .container {
     padding: 0 30px;
-    width: 100vw;
+    width: 100%;
 }
 
 .header {
@@ -105,22 +105,26 @@ body {
 
     .card-supervisor {
         grid-area: supervisor;
-        left: -30px;
+        /* left: -30px; */
+        transform: translate(-30px, 0);
     }
     
     .card-team-builder {
         grid-area: team-builder;
-        bottom: -110px;
+        /* bottom: -110px; */
+        transform: translate(0, 110px);
     }
     
     .card-karma {
         grid-area: karma;
-        top: -110px;
+        /* top: -110px; */
+        transform: translate(0, -110px);
     }
     
     .card-calculator {
         grid-area: calculator;
-        right: -30px;
+        /* right: -30px; */
+        transform: translate(30px, 0);
     }
 
     .cards-container {
@@ -132,12 +136,7 @@ body {
             ". karma .";
         justify-content: center;
         margin: 0;
-        position: relative;
-        top: -70px;
-    }
-
-    .card {
-        position: relative;
+        /* top: -70px */
     }
 
     .card__header {
